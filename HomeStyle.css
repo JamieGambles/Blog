@@ -1,0 +1,27 @@
+.button {
+
+    background: #ddd;
+    padding: 1em;
+    text-decoration: none;
+    color: initial;
+    align-self: center;
+    justify-self: center;
+    
+
+}
+
+.wrapper {
+    padding: 1em;
+    background: #eee;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5em;
+    grid-gap: 1em;
+    border: springgreen;
+
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}

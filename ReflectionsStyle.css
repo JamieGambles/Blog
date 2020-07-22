@@ -1,0 +1,40 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5em;
+    grid-gap: 1em;
+
+}
+
+
+.post {
+    background: #eee;
+    padding: 1em;
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+
+
+}
+
+.blogtitle {
+    background: #ddd;
+    padding: 1em;
+    grid-column: minmax(1fr, auto);
+    align-self: center;
+
+}
+
+.blogdate {
+    background: #ddd;
+    padding: 1em;
+    justify-self: end;
+    align-self: center;
+}
+
+.blogcontent {
+    background: #ddd;
+    padding: 1em;
+    grid-column: 1/3;
+}
