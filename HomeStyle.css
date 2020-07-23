@@ -1,27 +1,50 @@
-.button {
-
-    background: #ddd;
-    padding: 1em;
-    text-decoration: none;
-    color: initial;
-    align-self: center;
-    justify-self: center;
-    
-
-}
-
 .wrapper {
-    padding: 1em;
-    background: #eee;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: .5em;
-    grid-gap: 1em;
-    border: springgreen;
+  background: teal;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  grid-gap: 1em;
+}
+
+.navigation {
+  background: #eee;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.name {
+  background: #ddd;
+  padding: 1em;
+  align-self: center;
+  justify-self: start;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: teal;
+}
+
+.button {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: #ddd;
+  padding: 1em;
+  text-decoration: none;
+  color: initial;
+  align-self: center;
+  justify-self: end;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: teal;
+  -webkit-box-shadow: inset 0px 0px 0px 2px teal;
+  -moz-box-shadow: inset 0px 0px 0px 2px teal;
+  box-shadow: inset 0px 0px 0px 2px teal;
 
 }
 
-.button:hover,
-.button:focus {
-  box-shadow: inset 6.5em 0 0 0 var(--hover);
+.button:hover {
+  background: teal;
+  color: #eee;
+  transition: .2s;
 }
