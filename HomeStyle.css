@@ -1,5 +1,9 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
 .wrapper {
-  background: teal;
   display: grid;
   grid-template-columns: 1fr;
   padding: 1em;
