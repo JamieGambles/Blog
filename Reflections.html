@@ -10,6 +10,8 @@
 
 <body>
 
+
+
     <div class="wrapper">
         <nav>
             <div class="name">
@@ -19,56 +21,234 @@
         </nav>
 
         <div class="allblogs">
-            <div class="blog">
-                <img src="Figma.png" alt="Figma">
-                <div class="blogdate">
-                    23/07/20
+            <button class="btn">Scroll Into View</button>
+            <div class="YearWrapper">
+                <div class="Date">
+                    2020
                 </div>
-                <div class="blogtitle">
-                    Figma framework and Git take
-                </div>
+                <div class="DateWrapper">
+                    <div class="Date">
+                        January
+                    </div>
+                    <div class="DateWrapper 1">
+                        <div class="Date">
+                            Tuesday
+                            
+                        </div>
+                        
+                        <div class="blog">
+                            <img src="Figma.png" alt="Figma">
+                            <div class="blogdate">
+                                23/07/20
+                            </div>
+                            <div class="blogtitle">
+                                Figma framework and Git take
+                            </div>
 
-                <div class="blogtext">
-                    After struggling a whole ton with positioning and aligning things in the first practice assignment
+                            <div class="blogtext">
+                                After struggling a whole ton with positioning and aligning things in the first practice
+                                assignment
 
-                    <br>
-                    <br>
-                    In terms of GIT I used it last year to work on a group project for a game design project. GIT itself
-                    works really well for this. Working collaboratively GIT works well with its pulling and pushing
-                    system,
-                    and it documents all of the development changes for you so you can easily see what is being changed
-                    and
-                    go back to previous versions. I didn't use the branch system a lot, but from what I have read it
-                    allows
-                    for backend development and experimentation without touching the master branch which I can see being
-                    very useful. GITs community also seems to be promising with its open source and collaborative focus.
-                    Github desktop worked well for me to easily switch between and manage multiple projects that I was
-                    working on, in a much more visual system than using the terminal or git bash.
-                </div>
-            </div>
-            <div class="blog">
-                <img src="restyle of blog.png" alt="Figma">
-                <div class="blogdate">
-                    23/07/20
-                </div>
-                <div class="blogtitle">
-                    Blog Styling and Structure Development
-                </div>
-                <div class="blogtext">
-                    Worked a lot more on the structure of blog itself, I had a rough idea of what I wanted to do, such as the best way to implement the stickied header at the top. I disliked the regular way of achieving this of just giving the header a stickied position because I wanted the header in both the home page and reflections page to be inline, however with more posts the reflections page had a scrollbar and the home didn't, causing them to be out of line.
-                    <br>
-                    <br>
-                    The way I ended up getting around this was actually setting the wrapper div to be the exact viewport size, so that a scrollbar is not generated. And then wrapping the blog posts within another div, this time with overflow, this meant that the header stayed constant and I could still scroll through the blogs nicely, this also meant that the scrollbar was now nicely offset from the side of the page, and I can place it neatly inline with the header with a consistent margin.
-                    <br>
-                    <br>
-                    After achieving this I started looking at the styling of the whole page, as well as the structure of each blog post. With my current layout of a lot of nested divs each with their own padding I was wasting a lot of space. I decided to remove the colour from each of the different div, so that a smaller margin was less jarring, I then gave each element its own div as opposed to nesting all of the 'content' together. This way I can freely reorder how the information is stacked. I also changed from using the grid system to center and scale the blog posts proportionally, as when using fractions, the blogs would become too thin when the browser was rescaled. I changed to instead using a min and max width, and then a margin on the sides of the scrollbar div. This is so that the blogs will stay at a constant size when being scaled, until the margin pushes them closer together.
-                    <br>
-                    <br>
-                    Style wise I changed from my boxy appearance as that was really just there to see the margins for each div. I'm a fan of minimalist website so I went for an incredibly boring theme of black and white, using the font helvetica. I restyled the scrollbar to match this aesthetic, and added a single line border on each blog post to easily differentiate between blog posts.
+                                <br>
+                                <br>
+                                In terms of GIT I used it last year to work on a group project for a game design
+                                project.
+                                GIT
+                                itself
+                                works really well for this. Working collaboratively GIT works well with its pulling and
+                                pushing
+                                system,
+                                and it documents all of the development changes for you so you can easily see what is
+                                being
+                                changed
+                                and
+                                go back to previous versions. I didn't use the branch system a lot, but from what I have
+                                read it
+                                allows
+                                for backend development and experimentation without touching the master branch which I
+                                can
+                                see
+                                being
+                                very useful. GITs community also seems to be promising with its open source and
+                                collaborative
+                                focus.
+                                Github desktop worked well for me to easily switch between and manage multiple projects
+                                that
+                                I
+                                was
+                                working on, in a much more visual system than using the terminal or git bash.
+                                In terms of GIT I used it last year to work on a group project for a game design
+                                project.
+                                GIT
+                                itself
+                                works really well for this. Working collaboratively GIT works well with its pulling and
+                                pushing
+                                system,
+                                and it documents all of the development changes for you so you can easily see what is
+                                being
+                                changed
+                                and
+                                go back to previous versions. I didn't use the branch system a lot, but from what I have
+                                read it
+                                allows
+                                for backend development and experimentation without touching the master branch which I
+                                can
+                                see
+                                being
+                                very useful. GITs community also seems to be promising with its open source and
+                                collaborative
+                                focus.
+                                Github desktop worked well for me to easily switch between and manage multiple projects
+                                that
+                                I
+                                was
+                                working on, in a much more visual system than using the terminal or git bash.
+                                In terms of GIT I used it last year to work on a group project for a game design
+                                project.
+                                GIT
+                                itself
+                                works really well for this. Working collaboratively GIT works well with its pulling and
+                                pushing
+                                system,
+                                and it documents all of the development changes for you so you can easily see what is
+                                being
+                                changed
+                                and
+                                go back to previous versions. I didn't use the branch system a lot, but from what I have
+                                read it
+                                allows
+                                for backend development and experimentation without touching the master branch which I
+                                can
+                                see
+                                being
+                                very useful. GITs community also seems to be promising with its open source and
+                                collaborative
+                                focus.
+                                Github desktop worked well for me to easily switch between and manage multiple projects
+                                that
+                                I
+                                was
+                                working on, in a much more visual system than using the terminal or git bash.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="DateWrapper special">
+                        <div class="Date ">
+                            Thursday
+                        </div>
+
+                        <div class="blog">
+                            <img src="Figma.png" alt="Figma">
+                            <div class="blogdate">
+                                23/07/20
+                            </div>
+                            <div class="blogtitle">
+                                Figma framework and Git take
+                            </div>
+
+                            <div class="blogtext">
+                                After struggling a whole ton with positioning and aligning things in the first practice
+                                assignment
+
+                                <br>
+                                <br>
+                                In terms of GIT I used it last year to work on a group project for a game design
+                                project.
+                                GIT
+                                itself
+                                works really well for this. Working collaboratively GIT works well with its pulling and
+                                pushing
+                                system,
+                                and it documents all of the development changes for you so you can easily see what is
+                                being
+                                changed
+                                and
+                                go back to previous versions. I didn't use the branch system a lot, but from what I have
+                                read it
+                                allows
+                                for backend development and experimentation without touching the master branch which I
+                                can
+                                see
+                                being
+                                very useful. GITs community also seems to be promising with its open source and
+                                collaborative
+                                focus.
+                                Github desktop worked well for me to easily switch between and manage multiple projects
+                                that
+                                I
+                                was
+                                working on, in a much more visual system than using the terminal or git bash.
+                                In terms of GIT I used it last year to work on a group project for a game design
+                                project.
+                                GIT
+                                itself
+                                works really well for this. Working collaboratively GIT works well with its pulling and
+                                pushing
+                                system,
+                                and it documents all of the development changes for you so you can easily see what is
+                                being
+                                changed
+                                and
+                                go back to previous versions. I didn't use the branch system a lot, but from what I have
+                                read it
+                                allows
+                                for backend development and experimentation without touching the master branch which I
+                                can
+                                see
+                                being
+                                very useful. GITs community also seems to be promising with its open source and
+                                collaborative
+                                focus.
+                                Github desktop worked well for me to easily switch between and manage multiple projects
+                                that
+                                I
+                                was
+                                working on, in a much more visual system than using the terminal or git bash.
+                                In terms of GIT I used it last year to work on a group project for a game design
+                                project.
+                                GIT
+                                itself
+                                works really well for this. Working collaboratively GIT works well with its pulling and
+                                pushing
+                                system,
+                                and it documents all of the development changes for you so you can easily see what is
+                                being
+                                changed
+                                and
+                                go back to previous versions. I didn't use the branch system a lot, but from what I have
+                                read it
+                                allows
+                                for backend development and experimentation without touching the master branch which I
+                                can
+                                see
+                                being
+                                very useful. GITs community also seems to be promising with its open source and
+                                collaborative
+                                focus.
+                                Github desktop worked well for me to easily switch between and manage multiple projects
+                                that
+                                I
+                                was
+                                working on, in a much more visual system than using the terminal or git bash.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+let btn = document.querySelector('.btn');
+let el = document.querySelector('.special');
+
+btn.addEventListener('click', function () {
+    el.scrollIntoView({behavior: 'smooth' });
+    
+});
+
+    </script>
+
 </body>
 
 </html>

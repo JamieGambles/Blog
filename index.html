@@ -15,11 +15,33 @@
             </iframe>
         </div> 
         
-        <div class="circle">
-            <a class="stickied" href="Reflections.html">Blog</a>
+        <div id="circle">
+
+            <a id="stickied" href="Reflections.html">View Blog Posts</a>
         </div>
 
 </div>
+
+<script>
+
+
+
+let circle = document.getElementById('circle');
+let stickied = document.getElementById('stickied');
+const onMouseMove = (e) =>{
+
+    var yrot = (e.pageY - window.innerHeight*3/4)/60;
+    var xrot = (-e.pageX + window.innerWidth/2)/40;
+
+  circle.style.left = (-e.pageX + window.innerWidth/2)/5 + 'px';
+  circle.style.top = (-e.pageY + window.innerHeight/2)/40 + 'px';
+  stickied.style.transform = `rotateX(${yrot}deg) rotateY(${xrot}deg)`;
+
+
+}
+document.addEventListener('mousemove', onMouseMove);
+
+</script>
 
 </body>
 

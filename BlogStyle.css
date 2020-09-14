@@ -2,6 +2,7 @@ body,
 html {
     margin: 0px;
     padding: 0px;
+
 }
 
 .wrapper {
@@ -60,8 +61,41 @@ nav {
     overflow: auto;
     grid-gap: 2em;
     background-color: white;
+
 }
 
+.YearWrapper {
+
+    display: grid;
+    grid-template-columns: 5em auto;
+
+    -webkit-box-shadow: inset 0px 0px 0px 2px white;
+    -moz-box-shadow: inset 0px 0px 0px 2px white;
+    box-shadow: inset 0px 0px 0px 2px white;
+    grid-column: 1 / 3;
+}
+
+.DateWrapper {
+    display: grid;
+    grid-template-columns: 10em auto;
+
+    -webkit-box-shadow: inset 0px 0px 0px 2px white;
+    -moz-box-shadow: inset 0px 0px 0px 2px white;
+    box-shadow: inset 0px 0px 0px 2px white;
+    grid-column: 2 / 3;
+
+}
+
+.Date {
+
+    display: grid;
+    height: 20px;
+    justify-self: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 40vh;
+
+}
 
 
 .blog {
@@ -71,8 +105,10 @@ nav {
     grid-gap: 1em;
     justify-self: center;
     border-left: 2px solid black;
+    margin-top: 2em;
+    grid-column: 2 / 3;
 
-    
+
 }
 
 .blogtitle {
@@ -96,62 +132,75 @@ img {
 }
 
 ::-webkit-scrollbar {
-    width: 1em;
-    height: 12px;
-}
+    width: 2px;
+    background-color: #F5F5F5;
+  }
 
 ::-webkit-scrollbar-track {
-    border: 2px solid black;
-    width: 1em;
+
+    width: 1px;
 
 }
 
 ::-webkit-scrollbar-thumb {
     background: black;
-
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: black;
+    width: 10px;
+    background: purple;
 }
 
 @media only screen and (max-width: 600px) {
     .allblogs {
-      background-color: black;
+        background-color: black;
     }
-  }
-
-.circle {
-text-align: right;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    width: 100%;
-    height: 100%;
-
-
-    position: absolute;
-    pointer-events: none;
 }
 
-.stickied {
-    margin: 2em;
+#circle {
+    position: absolute;
+    display: grid;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    margin-left: 50vw;
+    margin-top: 75vh;
+    pointer-events: all;
+    color: teal;
+    perspective: 10em;
+
+
+}
+
+#stickied {
+    display: inline-block;
     padding: 1em;
-    justify-self: end;
-    align-self: end;
+    justify-self: center;
+    align-self: center;
     text-decoration: none;
     color: initial;
     font-family: sans-serif;
     font-weight: bold;
     color: #eee;
+
+
     -webkit-box-shadow: inset 0px 0px 0px 2px white;
     -moz-box-shadow: inset 0px 0px 0px 2px white;
     box-shadow: inset 0px 0px 0px 2px white;
-    pointer-events: all;
+
+    overflow: hidden;
+
 }
 
-.stickied:hover {
+#stickied:hover {
     background: #eee;
     color: black;
-    transition: .2s;
+    transition: color .2s;
+
+}
+
+iframe {
+    pointer-events: none;
 }
