@@ -13,15 +13,6 @@ html {
     box-sizing: border-box;
 }
 
-nav {
-    background: black;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 1em;
-    padding: 1em;
-    height: fit-content;
-}
-
 .name {
     font-family: sans-serif;
     font-weight: bold;
@@ -93,7 +84,7 @@ nav {
     justify-self: center;
     position: sticky;
     position: -webkit-sticky;
-    top: 40vh;
+    top: 50vh;
 
 }
 
@@ -105,7 +96,7 @@ nav {
     grid-gap: 1em;
     justify-self: center;
     border-left: 2px solid black;
-    margin-top: 2em;
+margin: 1em;
     grid-column: 2 / 3;
 
 
@@ -204,3 +195,25 @@ img {
 iframe {
     pointer-events: none;
 }
+
+  
+  a {
+      background-color: aqua;
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    text-decoration: none;
+  }
+
+  nav {
+      background-color: blue;
+    position: fixed;
+    z-index: 1;
+    width: 20%;
+    right: 0;
+    top: 0
+  }
+
+  section {
+      pointer-events: none;
+  }

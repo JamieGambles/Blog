@@ -9,19 +9,14 @@
 </head>
 
 <body>
-
-
-
     <div class="wrapper">
         <nav>
-            <div class="name">
-                IXXN211 P1 Blog / Jamie Gambles
-            </div>
-            <a href="index.html" class="button">Home</a>
+            <a href='#/'>◀</a>
+            <a href='#/'>▶</a>
+
         </nav>
 
         <div class="allblogs">
-            <button class="btn">Scroll Into View</button>
             <div class="YearWrapper">
                 <div class="Date">
                     2020
@@ -30,13 +25,13 @@
                     <div class="Date">
                         January
                     </div>
-                    <div class="DateWrapper 1">
+                    <div class="DateWrapper active">
                         <div class="Date">
                             Tuesday
                             
                         </div>
                         
-                        <div class="blog">
+                        <section class="blog">
                             <img src="Figma.png" alt="Figma">
                             <div class="blogdate">
                                 23/07/20
@@ -130,14 +125,14 @@
                                 was
                                 working on, in a much more visual system than using the terminal or git bash.
                             </div>
-                        </div>
+                        </section>
                     </div>
                     <div class="DateWrapper special">
                         <div class="Date ">
                             Thursday
                         </div>
 
-                        <div class="blog">
+                        <section class="blog">
                             <img src="Figma.png" alt="Figma">
                             <div class="blogdate">
                                 23/07/20
@@ -231,7 +226,103 @@
                                 was
                                 working on, in a much more visual system than using the terminal or git bash.
                             </div>
-                        </div>
+                        </section>
+                        
+                        <section class="blog">
+                            <img src="Figma.png" alt="Figma">
+                            <div class="blogdate">
+                                23/07/20
+                            </div>
+                            <div class="blogtitle">
+                                Figma framework and Git take
+                            </div>
+
+                            <div class="blogtext">
+                                After struggling a whole ton with positioning and aligning things in the first practice
+                                assignment
+
+                                <br>
+                                <br>
+                                In terms of GIT I used it last year to work on a group project for a game design
+                                project.
+                                GIT
+                                itself
+                                works really well for this. Working collaboratively GIT works well with its pulling and
+                                pushing
+                                system,
+                                and it documents all of the development changes for you so you can easily see what is
+                                being
+                                changed
+                                and
+                                go back to previous versions. I didn't use the branch system a lot, but from what I have
+                                read it
+                                allows
+                                for backend development and experimentation without touching the master branch which I
+                                can
+                                see
+                                being
+                                very useful. GITs community also seems to be promising with its open source and
+                                collaborative
+                                focus.
+                                Github desktop worked well for me to easily switch between and manage multiple projects
+                                that
+                                I
+                                was
+                                working on, in a much more visual system than using the terminal or git bash.
+                                In terms of GIT I used it last year to work on a group project for a game design
+                                project.
+                                GIT
+                                itself
+                                works really well for this. Working collaboratively GIT works well with its pulling and
+                                pushing
+                                system,
+                                and it documents all of the development changes for you so you can easily see what is
+                                being
+                                changed
+                                and
+                                go back to previous versions. I didn't use the branch system a lot, but from what I have
+                                read it
+                                allows
+                                for backend development and experimentation without touching the master branch which I
+                                can
+                                see
+                                being
+                                very useful. GITs community also seems to be promising with its open source and
+                                collaborative
+                                focus.
+                                Github desktop worked well for me to easily switch between and manage multiple projects
+                                that
+                                I
+                                was
+                                working on, in a much more visual system than using the terminal or git bash.
+                                In terms of GIT I used it last year to work on a group project for a game design
+                                project.
+                                GIT
+                                itself
+                                works really well for this. Working collaboratively GIT works well with its pulling and
+                                pushing
+                                system,
+                                and it documents all of the development changes for you so you can easily see what is
+                                being
+                                changed
+                                and
+                                go back to previous versions. I didn't use the branch system a lot, but from what I have
+                                read it
+                                allows
+                                for backend development and experimentation without touching the master branch which I
+                                can
+                                see
+                                being
+                                very useful. GITs community also seems to be promising with its open source and
+                                collaborative
+                                focus.
+                                Github desktop worked well for me to easily switch between and manage multiple projects
+                                that
+                                I
+                                was
+                                working on, in a much more visual system than using the terminal or git bash.
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -239,14 +330,68 @@
     </div>
 
     <script>
-let btn = document.querySelector('.btn');
-let el = document.querySelector('.special');
+// Reference counter outside of function
+var idx = 0;
+// Collect all sections in a NodeList
+var sxn = document.querySelectorAll('section');
+// UPDATED
+/* Loop through the NodeList sxn
+|| Assign a data-id attribute to each section 
+|| Set data-id value to current index of each
+|| section
+*/
+for (let i = 0; i < sxn.length; i++) {
+  sxn[i].setAttribute('data-id', i);
+}
+// Reference nav
+var nav = document.querySelector('nav');
+// Collect all anchors into a HTMLCollection
+var lnx = document.links;
+// UPDATED
+// Register document on click event callback is move()
+document.addEventListener('click', move, false);
+// UPDATED
+/* move() determines the direction of scroll by idx
+|| If a section is clicked instead of the arrows,
+|| then the data-id value of said section is now idx.
+|| So when a section is clicked, nothing happens until an 
+|| arrow is clicked. Once that happens, scrolling starts
+|| from the last section clicked.
+*/
+function move(e) {
+  if (e.target == lnx[0]) {
+    idx--;
+    if (idx < 0) {
+      idx = sxn.length - 1;
+    }
+  } else if (e.target.tagName === 'SECTION') {
+    idx = e.target.getAttribute('data-id');
+  } else {
+    idx++;
+    if (idx > sxn.length - 1) {
+      idx = 0;
+    }
+  }
+  return idxScroll(idx);
+}
 
-btn.addEventListener('click', function () {
-    el.scrollIntoView({behavior: 'smooth' });
-    
-});
-
+// Pass idx thru idxScroll
+function idxScroll(idx) {
+  // Reference current active section
+  var act = document.querySelector('.active');
+  // Determine which section becomes active
+  var x = sxn[idx];
+  // Remove active class from current section
+  act.classList.remove('active');
+  // Add active class to new section
+  x.classList.add('active');
+  /* scrollIntoView method has a behavior option that animates
+  || scrolling
+  */
+  x.scrollIntoView({
+    behavior: 'smooth'
+  });
+}
     </script>
 
 </body>
