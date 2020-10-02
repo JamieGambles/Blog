@@ -3,107 +3,47 @@ html {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto-Light';
+    background-color: #eee;
+    color: #222
 
 }
+
+
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em;
+    grid-template-columns: auto;
     height: 100vh;
-    box-sizing: border-box;
-}
 
-.button {
-    padding: 1em;
-    justify-self: end;
-    align-self: center;
-    text-decoration: none;
-    color: initial;
-    font-family: Roboto-Black;
-    font-weight: bold;
-    color: #eee;
-    -webkit-box-shadow: inset 0px 0px 0px 2px white;
-    -moz-box-shadow: inset 0px 0px 0px 2px white;
-    box-shadow: inset 0px 0px 0px 2px white;
-}
-
-.button:hover {
-    background: #eee;
-    color: black;
-    transition: .2s;
 }
 
 .allblogs {
-
-
     display: grid;
     grid-template-columns: 1fr;
     overflow: auto;
-    grid-gap: 2em;
-    background-color: white;
-    padding-left: 10em;
-    padding-right: 10em;
-    margin-right: 1em;
-    margin-left: 1em;
-    background-color: chocolate;
-
-
-
 }
 
-.YearWrapper {
-
+.Month {
     display: grid;
-    grid-template-columns: 5em auto 5em;
-    -webkit-box-shadow: inset 0px 0px 0px 2px white;
-    -moz-box-shadow: inset 0px 0px 0px 2px white;
-    box-shadow: inset 0px 0px 0px 2px white;
+    grid-template-columns: 100px auto 100px;
+    max-width: 1000px;
+    justify-self: center;
 }
 
-.DateWrapper {
+.Day {
     display: grid;
-    grid-template-columns: 5em auto 5em;
-    gap: 1em;
+    grid-template-columns: 100px auto 100px;
     grid-column: 2 / 3;
-    background-color: chartreuse;
-
-
 }
 
 .Date {
-
-    display: grid;
     height: 20px;
     justify-self: center;
     position: sticky;
     position: -webkit-sticky;
-    top: 50vh;
+    top: calc(50vh - 10px);
     font-weight: bold;
-
-}
-
-
-.blog {
-    padding: 1em;
-    display: grid;
-    grid-gap: 1em;
-    justify-self: right;
-    color: gray;
-
-
-
-}
-
-.blogtitle {
-    font-family: 'Titling-Bold';
-    font-size: 24px;
-
-}
-
-
-.blogtext {
-    font-family: 'Titling-Bold';
+    color: lightgray;
 }
 
 img {
@@ -111,118 +51,83 @@ img {
     height: auto;
 }
 
-::-webkit-scrollbar {
-    width: 2px;
-    background-color: #F5F5F5;
-    
-  }
-
-::-webkit-scrollbar-track {
-    
-    width: 1px;
-
-}
-
-::-webkit-scrollbar-thumb {
-    background: black;
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    width: 10px;
-    background: purple;
-}
-
-@media only screen and (max-width: 600px) {
-    .allblogs {
-
-    }
-}
-
-#circle {
-    position: absolute;
+.navwrapper {
     display: grid;
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    margin-left: 50vw;
-    margin-top: 75vh;
-    pointer-events: all;
-    color: teal;
-    perspective: 10em;
-
-
-}
-
-#stickied {
-    display: inline-block;
-    padding: 1em;
-    justify-self: center;
-    align-self: center;
-    text-decoration: none;
-    color: initial;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #eee;
-
-
-    -webkit-box-shadow: inset 0px 0px 0px 2px white;
-    -moz-box-shadow: inset 0px 0px 0px 2px white;
-    box-shadow: inset 0px 0px 0px 2px white;
-
-
-}
-
-#stickied:hover {
-    background: #eee;
-    color: black;
-    transition: color .2s;
-
-}
-
-iframe {
+    grid-template-columns: auto 100px 100px 600px 100px 100px auto;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
     pointer-events: none;
 }
 
+nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 3/4;
+    pointer-events: all;
+
+
+
+}
+
+button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+
+
+}
+
+.next {
+    cursor: url(down.png), pointer;
+}
+
+.back {
+    cursor: url(up.png), pointer;
+}
+
+.button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.active .Date {
+    color: black;
+}
+
+
   
-  a {
-      background-color: aqua;
-    width: 48px;
-    height: 48px;
-    font-size: 48px;
-    text-decoration: none;
-  }
-
-  nav {
-    padding: 1em;
-    position: fixed;
-    z-index: 1;
-  }
-
-
-  .active {
-      color: black;
-  }
-
-
-
-  @font-face {
+@font-face {
     font-family: 'Roboto-Black';
-    src:  url('roboto-black-webfont.woff2') format('woff2'),
-          url('roboto-black-webfont.woff') format('woff');,
-  }
+    src: url('roboto-black-webfont.woff2') format('woff2'),
+        url('roboto-black-webfont.woff') format('woff');
+}
 
-  @font-face {
+@font-face {
     font-family: 'Roboto-Light';
-    src:  url('roboto-light-webfont.woff2') format('woff2'),
-          url('roboto-light-webfont.woff') format('woff');,
-  }
+    src: url('roboto-light-webfont.woff2') format('woff2'),
+        url('roboto-light-webfont.woff') format('woff');
+}
 
-  @font-face {
+@font-face {
     font-family: 'Titling-Bold';
-    src:  url('Titling-Gothic-Bold.ttf') format('ttf');
+    src: url('Titling-Gothic-Bold.ttf') format('ttf');
+}
 
-  }
-.navigate {
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
