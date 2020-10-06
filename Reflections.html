@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>IXXN211 P1 Reflections</title>
 </head>
 
 <body>
+    <canvas id="noise" class="noise"></canvas>
     <nav>
         <div class="navmonth">
             <button class="back" onclick="backmonth()"></button>
@@ -24,25 +24,29 @@
     </nav>
     <main>
         <section class="landing">
+            <div class="all">
+            <div class="contacts">
+                <div class="name">Jamie Gambles</div>
+                <div class="year">2020</div>
+                <div class="email">Jamiegambles01@gmail.com</div>  
+            </div>
+            <div class="centre">
+
+<div class="links">
             <ul class="social">
                 <li>Instagram</li>
-                <li>Twitter</li>
                 <li>Linkedin</li>
-                <li>Dribbble</li>
-                <div class="blogbutton">Blog</div>
+                <li>Twitter</li>
             </ul>
-            <div class="bio">
-            <p>Hi im jamie wow i love web design. Graphic design is my passion Graphic design is my passion Graphic design is my passion Graphic design is my passion Graphic design is my passion Graphic design is my passion Graphic design is my passion Graphic design is my passion Graphic design is my passion Graphic design is my passion Graphic design is my passion Graphic design is my passion</p>
+            <button class="blogbutton" onclick="toblog()">Blog</button>
         </div>
-        <ul class="contacts">
-            <li>verycoolemail@email.com</li>
-            <li>027936782</li>
-        </ul>
+    </div>
+</div>
         </section>
         <section class="month">
-            <h2 class="datemonth">Jan</h2>
+            <h2 class="datemonth jan">Jan</h2>
             <section class="day">
-                <h2 class="dateday">01</h2>
+                <h2 class="dateday">.01</h2>
                 <article>
                     <div class="slider">
                         <img src="Figma.png" alt="Figma">
@@ -135,7 +139,7 @@
                 </article>
             </section>
             <section class="day">
-                <h2 class="date dateday">02</h2>
+                <h2 class="date dateday">.02</h2>
                 <article class="blog">
                     <div class="slider">
                         <img src="Figma.png" alt="Figma">
@@ -228,7 +232,7 @@
                     </article>
             </section>
             <section class="day">
-                <h2 class="date dateday">03</h2>
+                <h2 class="date dateday">.03</h2>
                 <article class="blog">
                     <div class="slider">
                         <img src="Figma.png" alt="Figma">
@@ -323,9 +327,9 @@
             </section>
         </section>
         <section class="month">
-            <h2 class="date datemonth">Feb</h2>
+            <h2 class="datemonth feb">Feb</h2>
             <section class="day">
-                <h2 class="date dateday">01</h2>
+                <h2 class="date dateday">.01</h2>
                 <article class="blog">
                     <div class="slider">
                         <img src="Figma.png" alt="Figma">
@@ -418,7 +422,7 @@
                 </article>
             </section>
             <section class="day">
-                <h2 class="date dateday">02</h2>
+                <h2 class="date dateday">.02</h2>
                 <article class="blog">
                     <div class="slider">
                         <img src="Figma.png" alt="Figma">
@@ -511,7 +515,7 @@
                     </article>
             </section>
             <section class="day">
-                <h2 class="date dateday">03</h2>
+                <h2 class="date dateday">.03</h2>
                 <article class="blog">
                     <div class="slider">
                         <img src="Figma.png" alt="Figma">
@@ -613,11 +617,19 @@
 </html>
 
 <script>
+
+
     var idxday = 0;
     var sxnday = document.getElementsByClassName('day');
 
     var idxmonth = 0;
     var sxnmonth = document.getElementsByClassName('month');
+
+    function toblog() {
+        sxnday[idxday].scrollIntoView({
+            behavior: 'smooth'
+    })
+    };
 
     function nextday() {
         if (idxday !== sxnday.length - 1) {
@@ -722,6 +734,15 @@
             startX = e.pageX - slider.offsetLeft;
             scrollLeft = slider.scrollLeft;
         });
+
+        slider.addEventListener('touchstart', (e) => {
+            slider.classList.add('active');
+        });
+
+        slider.addEventListener('touchend', (e) => {
+            slider.classList.remove('active');
+        });
+
         slider.addEventListener('mouseleave', () => {
             isDown = false;
             slider.classList.remove('active');
@@ -739,5 +760,97 @@
             console.log(walk);
         });
 
-    })
+    });
+
+    
+    const noise = () => {
+    let canvas, ctx;
+
+    let wWidth, wHeight;
+
+    let noiseData = [];
+    let frame = 0;
+
+    let loopTimeout;
+
+
+    // Create Noise
+    const createNoise = () => {
+        const idata = ctx.createImageData(wWidth, wHeight);
+        const buffer32 = new Uint32Array(idata.data.buffer);
+        const len = buffer32.length;
+
+        for (let i = 0; i < len; i++) {
+            if (Math.random() < 0.5) {
+                buffer32[i] = 0xff808080;
+            }
+        }
+
+        noiseData.push(idata);
+    };
+
+
+    // Play Noise
+    const paintNoise = () => {
+        if (frame === 9) {
+            frame = 0;
+        } else {
+            frame++;
+        }
+
+        ctx.putImageData(noiseData[frame], 0, 0);
+    };
+
+
+    // Loop
+    const loop = () => {
+        paintNoise(frame);
+
+        loopTimeout = window.setTimeout(() => {
+            window.requestAnimationFrame(loop);
+        }, (1000 / 25));
+    };
+
+
+    // Setup
+    const setup = () => {
+        wWidth = window.innerWidth;
+        wHeight = window.innerHeight;
+
+        canvas.width = wWidth;
+        canvas.height = wHeight;
+
+        for (let i = 0; i < 10; i++) {
+            createNoise();
+        }
+
+        loop();
+    };
+
+
+    // Reset
+    let resizeThrottle;
+    const reset = () => {
+        window.addEventListener('resize', () => {
+            window.clearTimeout(resizeThrottle);
+
+            resizeThrottle = window.setTimeout(() => {
+                window.clearTimeout(loopTimeout);
+                setup();
+            }, 200);
+        }, false);
+    };
+
+
+    // Init
+    const init = (() => {
+        canvas = document.getElementById('noise');
+        ctx = canvas.getContext('2d');
+
+        setup();
+    })();
+};
+
+noise();
+    
 </script>
