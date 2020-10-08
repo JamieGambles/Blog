@@ -11,8 +11,16 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     align-content: center;
-    width: 1250px;
-    max-width: calc(100% - 25px);
+    width: calc(100% - 25px);
+    max-width: 1250px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0px;
+        max-width: 100%;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -43,6 +51,14 @@ nav {
     display: grid;
     grid-template-rows: 1fr 1fr;
     pointer-events: all;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navday,
+    .navmonth {
+        pointer-events: none;
+    }
 }
 
 button {
@@ -100,36 +116,59 @@ main {
 
 .contacts {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 150px auto 150px;
     align-content: center;
     border-bottom: 1px solid gray;
     z-index: 3;
-    color: #222;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     height: 150px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contacts {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+.name {
+    justify-self: flex-start;
 }
 
 .year {
-    text-align: center;
+    justify-self: center;
 }
 
 .email {
-    text-align: end;
+    justify-self: end;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .year,
+    .email,
+    .name {
+        justify-self: flex-start;
+        align-self: center;
+
+    }
+}
+
+
 
 .social {
     list-style: none;
     padding: 0px;
     font-family: 'IBM Plex Sans', sans-serif;
-    color: #222;
     z-index: 3;
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 75px;
     z-index: 3;
     align-self: start;
     justify-self: start;
-    color: #222;
+
 
 }
 
@@ -137,9 +176,7 @@ li {
     margin: 0px;
     padding: 0px;
     font-size: 75px;
-    color: #222;
     transition: all .2s ease-in-out;
-
 }
 
 .blogbutton {
@@ -182,8 +219,10 @@ li:hover {
     grid-column: 1/2;
     transform: scale(1);
     transition: all 0.2s;
-
+    border-bottom: 1px solid gray;
 }
+
+
 
 .activemonth {
     transform: scale(1);
@@ -204,18 +243,40 @@ li:hover {
     color: #222;
 }
 
+@media only screen and (max-width: 600px) {
+
+    .day, .month, .activeday, .activemonth, .activemonth .day {
+        grid-template-columns: auto;
+        border: none;
+    }
+}
+
 h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+}
+
+.date {
+    font-size: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .date {
+        font-size: 16px;
+
+    }
+}
+
+.dateday,
+.datemonth {
     height: 20px;
     justify-self: center;
     position: sticky;
     position: -webkit-sticky;
     top: 50vh;
-    font-weight: bold;
     color: lightgray;
     margin-bottom: 75px;
     margin-top: 75px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 16px;
     transition: all 0.2s;
     transform: scale(1);
     padding: 0px;
@@ -223,22 +284,34 @@ h2 {
     line-height: 0px;
 }
 
-.datemonth {
+@media only screen and (max-width: 600px) {
 
+    .dateday,
+    .datemonth {
+        font-size: 0px;
+        height: 0px;
+        margin: 0px;
+    }
 }
 
-.dateday {
+.datemonth {}
 
-}
+.dateday {}
 
 article {
 
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 25px;
-
-
 }
+
+@media only screen and (max-width: 600px) {
+    article {
+        margin-right: 0px;
+    }
+}
+
+
 
 .slider {
     max-width: 100%;
@@ -250,6 +323,17 @@ article {
     cursor: url(right.png), pointer;
     line-height: 0;
     z-index: 3;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .slider,
+    .day,
+    .month,
+    .activeday,
+    .activemonth .day {
+        transform: scale(1);
+    }
 }
 
 .slider.active {
@@ -270,6 +354,8 @@ h1 {
     margin-bottom: 25px;
 }
 
+
+
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -277,3 +363,65 @@ p {
     margin: 0px;
     padding: 0px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .date,
+    h1,
+    p {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+.mobiledate {
+    background-color: green;
+}
+
+.date {
+    height: 25px;
+    display: inline-block;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .mobiledate {
+        display: none !important;
+        height: 0px;
+        line-height: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.modal {
+    z-index:100;
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.8)
+    }
+    
+    .modal-content{
+    margin: auto;
+    display: block;
+        position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75%;
+      height: auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        .modal-content {
+            width: 100%;
+        }
+    }
