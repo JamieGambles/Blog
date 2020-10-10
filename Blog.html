@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>IXXN211 P1 Reflections</title>
+    <title>Jamie Gambles Blog</title>
 </head>
 
 <body>
@@ -15,626 +15,1061 @@
     <div id="modal01" class="modal" onclick="this.style.display='none'">
         <div class="modal-content">
             <img id="img01">
+            <p id="text01"></p>
         </div>
     </div>
     <nav>
         <div class="navday">
-            <button class="back" onclick="backday()"></button>
-            <button class="next" onclick="nextday()"></button>
+            <button class="backday" onclick="backday()"></button>
+            <button class="nextday" onclick="nextday()"></button>
         </div>
         <div class="navmonth">
-            <button class="back" onclick="backmonth()"></button>
-            <button class="next" onclick="nextmonth()"></button>
+            <button class="backmonth" onclick="backmonth()"></button>
+            <button class="nextmonth" onclick="nextmonth()"></button>
         </div>
     </nav>
     <main>
         <section class="landing" id="landing">
-            <div class="links">
-                <div class="contacts">
-                    <div class="name">Jamie Gambles</div>
-                    <div class="year">2020</div>
-                    <div class="email">Jamiegambles01@gmail.com</div>
-                </div>
-                <ul class="social">
-                    <li>Instagram</li>
-                    <li>Linkedin</li>
-                    <li>Twitter</li>
-                    <li class="blogbutton" onclick="toblog()">Blog</li>
-                </ul>
-            </div>
+            <ul class="contacts">
+                <li class="name">Jamie Gambles</div>
+                <li class="year">2020</div>
+                <li class="email">Jamiegambles@gmail.com</div>
+            </ul>
+            <ul class="links">
+                <li class="social">Instagram</li>
+                <li class="social">Linkedin</li>
+                <li class="social">Twitter</li>
+                <li class="blogbutton" onclick="toblog()">Blog</li>
+            </ul>
             </div>
         </section>
         <section class="month">
             <div class="daywrapper">
                 <section class="day">
                     <article>
-                        <div class="slider">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="lilly belle4.jpg" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                        </div>
-                        <h1>Figma framework and git take</h1>
-                        <div class="mobiledate">
-                            <h2 class="date">03</h2>
-                            <h2 class="date">Jan</h2>
-                        </div>
-                        <p>After struggling a whole ton with positioning and aligning things in the first practice
-                            assignment
-                            <br>
-                            <br>
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.</p>
+                        <img class="singleimg" src="images/finalwireframe.JPG"
+                        alt="Recreation of my website in figma"
+                        onclick="onClick(this)" style="display: block;">
+                        <h1>The last one</h1>
+                        <h2 class="datemobile">10 Oct</h2>
+                        <p>Final touches on my blog. I added an image class for the case where there is only one image
+                            in a post, and therefore doesn’t need to be in the slider and therefore should span across
+                            the whole post, and I added the alt text of an image into the Modal. This should make it a
+                            lot easier when I’m blogging to explain what the screenshots are. I also changed the scroll
+                            into view method to align the content to the centre of the page, this is to accommodate for
+                            smaller blog posts that won’t have their date triggered if they are scrolled to top of the
+                            viewport.
+                            <br><br>
+                            I’m also doing a fair amount of blog catchup right now so excuse the changing tense. I feel
+                            like I could write more about a lot of things, especially our continued development of
+                            project 2 since our group has spent a lot of time doing work trying to figure out the best
+                            way of doing things through discussion, which is hard to quantify in these blog posts. Also
+                            on the figma situation, when I made my initial wireframe that is right down the bottom I had
+                            a lot of angst against figma, and I also didn’t know how to use it correctly, but it was
+                            still a part of the development so there it is. I could go back and make a new one, but what
+                            would I make? My finished blog just in figma? I don’t know that feels like a waste of time.
+                            <br><br>
+                            But I’m looking at the Blog assignment on blackboard right now and prototypes seem to be
+                            there so.
+                            <br><br>
+                            Since a lot of my blog is oriented around elements being stickied, and user interaction, its
+                            difficult to prototype my final blog in figma. But it gets the idea across.
+                            <br><br>
+                            In terms of reflecting on my initial plan for my website, I’ll look back to the first
+                            iteration of my blog that I created in the class session when we were first introduced to
+                            this project.
+                            <br><br>
+                            Honestly I found this project difficult, I found that given a very limited objective,
+                            (create a simple website where the only prerequisite is that you can record blog posts) I
+                            struggled to find ways to make it interesting for myself. Especially given that my personal
+                            design ethos is very minimalist/brutalist. A simple project with a simple aesthetic is not
+                            what I wanted to create, however that is what my first iteration of my blog was. The
+                            development process of my website has been trying to strike a balance between complicating
+                            things for myself, but also so that I could put forward an ‘impressive submission’ and
+                            retaining the simple structure and aesthetic that I favour. The first iteration of my
+                            website visually is almost identical, if not simpler in my final iteration. It’s the same
+                            black and white colours, the same blog structure, with the image at the top, and it’s the
+                            same premise, just scroll down. However, I have removed the stickied nav, as the information
+                            there was not relevant when the user is scrolling, and I moved to just a single HTML page,
+                            as I felt I didn’t have enough information to place on my home/landing screen to justify it
+                            being separate to the main content. My blog however has changed on the interaction side, I
+                            added the image modal, the draggable slider, the date navigation. Only the slider was
+                            planned in my early versions (at least in my head) and at that point it was a regular
+                            carousel, and not what I ended up with.
+                            <br><br>
+                            you can imagine that the links on the landing page take you to very cool social media
+                            accounts.</p>
                     </article>
-                    <h2 class="dateday">01</h2>
+                    <h2 class="dateday">10</h2>
                 </section>
                 <section class="day">
                     <article>
                         <div class="slider">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="lilly belle4.jpg" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
+                            <img src="images/Modaldisplay.JPG" alt="Deja vu" onclick="onClick(this)"
+                                style="display: block;">
+                            <img src="images/Modal.JPG" alt="Javascript that opens and closes the image modal"
+                                onclick="onClick(this)" style="display: block;">
+                            <img src="images/Bluehighlight.JPG" alt="CSS that removes the blue highlight on mobile"
+                                onclick="onClick(this)" style="display: block;">
                         </div>
-                        <h1>Figma framework and Git take</h1>
-                        <div class="mobiledate">
-                            <h2 class="date">03</h2>
-                            <h2 class="date">Jan</h2>
+                        <h1>Mobile scaling and Modals</h1>
+                        <h2 class="datemobile">09 Oct</h2>
+                        <p>Finished up the remaining features that I wanted for my blog. One of the features that I
+                            wanted was a way to retain my unique way of displaying the date even in mobile mode. However
+                            keeping this system in a column to the side was not good as it didn’t leave a lot of room
+                            for the content of my blog post, and also the ‘buttons’ of this system did not carry across
+                            well to mobile as there is no way to hover over the buttons and so my dynamic cursors do not
+                            work. I thought of adding text that presents as a button above and below the dates, however
+                            I really didn’t like the way that this clashed with the movement of the date of an inactive
+                            blog post (as they overlap when moving). My plan for mobile was to move the date system to
+                            be sticked at the top of the screen and obscure the content as it is scrolled underneath,
+                            functionally this worked okay, however I found that the overlaid element did not match the
+                            existing aesthetic of my blog and I found it really jarring. I also had to use some
+                            unpleasant ways of aligning the text to the top such as using negative margins, as the day
+                            and the month dates are in different wrappers, and so can’t align normally. I ended up
+                            returning to just moving the dates into the content of the blog post, and having the date be
+                            unique to each blog post. This method is boring; however, it can be implemented neatly and
+                            in line with my existing content unlike the other way I was trying.
+                            <br><br>
+                            I also gave the images in my slider a dynamic width and a set height, this is so that no
+                            matter the proportions of and image, it will always align perfectly with the ones next to
+                            it, prior to this if the image was taller then it would jut out awkwardly from the stack. I
+                            also went through and applied all of the appropriate scaling to all of my elements when in
+                            mobile mode, doing this helped me change the way I was calculating the width of each of my
+                            elements to a better way, as before I was using a lot of width: 100%, and this was messing
+                            with the scaling a lot, especially for the image slider. I also added a onclick modal for my
+                            images, as while my slider is a nice way of storing multiple images in a blog post, it is
+                            not the best for viewing images. Adding the onclick modal presented three new issues however
+                            in my JavaScript.
+                            <br><br>
+                            The first was getting the modal to overlay only the image that was clicked, and to do this
+                            in a dynamic manner so that I don’t need unique ids for every one of my images as I have a
+                            lot. I fixed this by ripping code from codepen, where it uses the ‘this’ function to
+                            determine which image to display.
+                            <br><br>
+                            The second was preventing scrolling whilst the modal was opened. When I first implemented
+                            the modal I wasn’t running into the problem as I was using main as an overflow container for
+                            my blogpost, however when I refactoring my scaling I removed the overflow and instead just
+                            left the scrolling default, and this allowed for scrolling even with the modal open. I
+                            couldn’t fix this using pointer-events: none as I needed to register a click to close the
+                            modal. To fix this I went into my function that opens and closes the modal and added the
+                            overflow: hidden styling to body when the modal is opened, and then overflow: auto when it
+                            is closed.
+                            <br><br>
+                            The third problem was that because my slider already interacting with onclick for the
+                            dragging function, the image couldn’t differentiate between a click, and a click and drag
+                            and so would incorrectly display the modal when the user is trying to drag. I managed to
+                            write the code for this as the solutions I found online seemed to be overly convoluted. The
+                            code I wrote essentially records the x and y of the mouse when it is pressed down, and when
+                            it is released. If the initial x and y is equal to the end x and y, then that means that the
+                            user clicked, as the position of the mouse did not change whilst the cursor was held down.
+                            If it did change then that means that user dragged. I then used these in if statements
+                            before opening the modal.
+                            <br><br>
+                            Aside from implementing these things I also fixed a lot of small things and overall did a
+                            lot of tidying up of my code. I placed all my media query’s CSS into one big media query at
+                            the bottom and took out a lot of the placeholder divs and wrappers I had in my html.
+                            <br><br>
+                            Lastly, after resizing the viewport so much when working on the mobile version of my blog, I
+                            found that because I had a lot of subtle animations playing, I really disliked how they
+                            would be triggered on the window changing. I found some JavaScript online that disabled
+                            this, and I prefer this a lot.
+                            <br><br>
+                            Inline with this kind of fix I also added some CSS which disabled the awkward blue highlight
+                            that appeared in the mobile version, in place of this I reformatted my landing page so that
+                            size of the buttons regardless of where the text is always equal to the width of the landing
+                            page, this way I can add a onclick effect for mobile where the ‘background’ of the button
+                            flashes a slightly darker grey indicating the ‘hitbox’ of the button. Initially I was
+                            planning on changing this back to how I had it originally on the desktop version, where you
+                            had to hover your cursor of the text to get the hover effect, however I ended up really
+                            liking seeing the hover effects just when the cursor was at the same height of the button.
+                            This also let me implement my custom cursor to the blog button which is an arrow aiming
+                            down. I had thought of doing this earlier, but I figured that the overlapping lines of the
+                            hover effect of the button combined with the custom cursor would be too much.</p>
+                    </article>
+                    <h2 class="dateday">09</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/carouselschematics.JPG"
+                            alt="Red boxes indicate the content that would be contained each carousel. On second though the first carousel could probably just scroll"
+                            onclick="onClick(this)" style="display: block;">
+                        <h1>Project 2 Development update</h1>
+                        <h2 class="datemobile">08 Oct</h2>
+                        <p>I spent time in class trying to get the carousel-like navigation of our group project website
+                            set up. My thinking for this is that the website will essentially act as two carousels,
+                            there will be one vertical one that contains the home screen and then below that another
+                            frame for the content of the website. That frame for the content will then act as one big
+                            carousel, which will include the Nominations page, index, about us page, and the editors
+                            page. My reasoning for making this system out of carousels is that in my previous iteration
+                            of this website I used overflow containers, and then used JavaScript to scroll left and
+                            right when a button is pressed. This system worked well and was very easily to implement,
+                            however a big issue with it is that it wasn’t responsive, when the website is scaled, the
+                            sections wouldn’t align to the centre of the page, and you would be left looking at the
+                            middle area of two sections. I also hadn’t found a way to ‘lock on’ to a section when
+                            scrolling using this method, as I was using absolute values when scrolling which of course
+                            would not work when I added the pages, and when the page is resized.
+                            <br><br>
+                            Aside from the carousels I also looked at importing our symbols that Jack is designing as
+                            SVG’s rather than PNG’s, this is so that applying hover effects to our buttons is a lot
+                            easier, as we wouldn’t need to manually export all of the symbols in their different
+                            colours, we could just change their fill. Blaine sent an email after class with some
+                            examples of this in use, so I will look at implementing this soon.
+                            <br><br>
+                            We are still discussing the colour scheme that we have chosen for our website, one the
+                            critiques that we got when we were presenting our prototype was that the yellow with black
+                            or white text was not the most readable. Now we have a main colour of an army green? -ish
+                            colour, and then we still using our yellow, but just as an accent colour. We changed to this
+                            one as our previous change to a navy blue made the website look to much like Facebook.
+                            Ultimately, I don’t really mind the colour that we with now, I’m leaving that up to the
+                            others as I want to focus on the coding of the website.
+                            <br><br>
+                            As a Segway to coding, I am finding it difficult having a number of us all try and code the
+                            website. Originally the plan was to have just me, and Madisyn do the coding, I would focus
+                            on the more technical aspects, while Madisyn would focus on laying out the pages correctly.
+                            Kat however has started doing some of the coding, and in a very different manner to how me
+                            or Madisyn would do it, and even further, since she is copying and pasting from sources
+                            online, if we run into issues with segments that she has made, then she can’t help us
+                            resolve them as she doesn’t understand the code. I think I will have to end up remaking the
+                            areas she has done which is a shame as that happened a fair bit in the Figma document as
+                            well, but what she is doing slowing us down.</p>
+                    </article>
+                    <h2 class="dateday">08</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <div class="slider">
+                            <img src="images/centrealignedblog.JPG" alt="Before feedback blog" onclick="onClick(this)"
+                                style="display: block;">
+                            <img src="images/darklanding.JPG" alt="Before feedback landing" onclick="onClick(this)"
+                                style="display: block;">
                         </div>
-                        <p>After struggling a whole ton with positioning and aligning things in the first practice
-                            assignment
-                            <br>
-                            <br>
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.</p>
+                        <h1>Blog feedback</h1>
+                        <h2 class="datemobile">07 Oct</h2>
+                        <p>I was in a call with one of my friends from home who has done a bit of Web design so I asked
+                            if she could give me feedback on my Blog. Today I had spent time reworking the layout of my
+                            landing page, so it was the first time my blog was looking somewhat like a complete website.
+                            Her two main critiques were that the colour change between my landing page and my blog page
+                            felt jarring and didn’t help to create the seamless effect that I was going for by using one
+                            html page. The second critique was similar, and it was that my Landing page being left
+                            aligned, and with a margin of 75px, felt disjointed to my blog which instead had an auto
+                            margin and was centre aligned. I took onboard this feedback and changed the colours, and
+                            then I first started exploring creating a horizontally centred landing page however nothing
+                            that made I ended up liking and so I started exploring a left aligned blog.
+                            <br><br>
+                            This ended up being a fantastic design change, as having it left aligned meant that I didn’t
+                            have to worry about leaving equal width to the date column padding on the right side of the
+                            blog in order to centre it correctly, so left aligning game me a lot more working room with
+                            padding. Achieving this however was frustrating, due to how I had coded the dates column to
+                            function. I ended up fixing this, however it did result in me having to place the date
+                            underneath the blog post in my HTML, which I am not a fan of.</p>
+                    </article>
+                    <h2 class="dateday">07</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/Firstlanding.JPG"
+                            alt="First iteration of landing page, bio text is placeholder, and I was experimenting with using a dark gray on slightly ligher gray background, but this didn't seem promising for readability"
+                            onclick="onClick(this)" style="display: block;">
+                        <h1>Troubleshooting Kat and landing page</h1>
+                        <h2 class="datemobile">06 Oct</h2>
+                        <p>Tuesday class session I went over the initial framework that I had created for our website
+                            with our group, and then I spent most of the class in getting Kat up to date with our git as
+                            she wasn’t familiar with how to update her branch so that when she does work she is doing it
+                            on the latest version of git. While doing this me and Madisyn started structuring the
+                            editors page and the about us page
+                            <br><br>
+                            After class I continued to work on my blog. I created the first iteration of my landing
+                            page, which took me a long time as I couldn’t create a good layout. Feels a bit like karma
+                            for not spending the time to work through figma and create a proper wireframe. My initial
+                            versions had a small bio to the right of the social media links; however, I didn’t like
+                            right aligning to mirror what I did for the social links, and everything felt way too
+                            cramped when I centre aligned it. My fix for this was to remove it. I didn’t really like
+                            having a bio up there anyway, everything I wrote sounded pretentious and cliché. I think a
+                            bio is more suited towards a portfolio website and not a blog about some mediocre web
+                            design.
+                            <br><br>
+                            I continued working on the blog and when looking for exemplar work, I came across an article
+                            which felt very topical towards my landing page design. I can’t find it now but essentially
+                            it was a critique of the commonly used ‘explore’ button on landing pages that when clicked
+                            scrolls the user down to the beginning of the websites content. I agreed with a lot of the
+                            points made in this article, prominently being that ‘good design’ would not need a prompt
+                            telling the user what to do, the user would now what do through the design alone. Since my
+                            current landing page featured a similar button, saying ‘blog’ underneath my social media
+                            links, I looked at the suggested alternatives. The most suggested being to ‘peak’ the
+                            content from the bottom of the page, this works by showing the user that there is content
+                            further down, and therefore they naturally scroll down. I have already implemented this
+                            technique in my slider, by locking the image width to 90% there is always 10% of the next
+                            image show, hopefully showing the user that they can drag to the left to reveal more. I
+                            added this feature to landing page by peaking the blog out from the bottom, but nothing I
+                            did looked right. I think because a lot of my design is incredibly minimal, it felt wrong to
+                            break the strong lines that I had established. I still think there is a better solution than
+                            the button that I have right now, but I think its better than peaking the content.
+                            <br><br>
+                            I also hopped in a call with Jack and got his opinion on my font choices as I wasn’t liking
+                            them as much now. At the time I was using IBM Plex Sans condensed as header text, and the
+                            Helvetica for my body text. This combination was okay, I really wanted to use the IBM font
+                            as I am a big IBM fan, using Helvetica felt like a cop-out but as Jack mentioned my website
+                            was designed in a manner that Helvetica complimented. He suggested that I use Helvetica bold
+                            as my header text, but I really couldn’t do that as that is what I always do I’m trying to
+                            do something a bit more considered here. After a lot of debating I settled on changing the
+                            header text to the regular IBM Plex Sans Bold, and then I used Montserrat as my body font.
+                        </p>
+                    </article>
+                    <h2 class="dateday">06</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/noise.JPG"
+                            alt="Noise with higher opacity just to demonstrate, I use it on a much lower setting but it's not visible in screenshots"
+                            onclick="onClick(this)" style="display: block;">
+                        <h1>Noise</h1>
+                        <h2 class="datemobile">05 Oct</h2>
+                        <p>Although bland and minimal is the aesthetic I am going for with my blog, I decided that I
+                            wanted something a little interesting. I ended up choosing to go for a very subtle animated
+                            noise effect that plays in the background. Looking online there were a few ways to achieve
+                            this, however the most common was to create a noise texture in photoshop and use CSS to
+                            animate it moving in a square like pattern giving the illusion of noise being animated. I
+                            didn’t want to go this route as it felt like cheating. I would much rather generate the
+                            noise and have it correctly animate, even if the effect is very subtle. I found what I
+                            needed on codepen and placed it my code and it worked fantastically, I can use opacity to
+                            increase and decrease its strength as well.</p>
+                    </article>
+                    <h2 class="dateday">05</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Transitions and animations</h1>
+                        <h2 class="datemobile">04 Oct</h2>
+                        <p>The implementation of my scrolling system gave me a unique opportunity for my website, where
+                            the section in the middle of the viewport would be given the class of active, this meant
+                            that I could dynamically change the colour of it as an example. When I first implemented
+                            this, I used this as a method for troubleshooting, as it was easy to see which one my system
+                            thought was active. The code that I ended up using for the slider included an interesting
+                            effect where by default the slider would be at a scale of 0.98, and then only when the
+                            cursor is held down it, does the scale change to 1, I felt that this created a really
+                            interesting feeling of tactility and depth, and so I added a similar effect to my blog
+                            posts, by default they are at a scale of 0.98, and then when they are given a class of
+                            active, and are therefore the currently viewed post, they scale up. These effects combined
+                            with a transition of 0.2s give a lovely feeling of fluidity and dynamism to my blog.</p>
+                    </article>
+                    <h2 class="dateday">04</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Carousels and sliders</h1>
+                        <h2 class="datemobile">03 Oct</h2>
+                        <p>I used the work that I did on our group project as inspiration for my blog today, where I
+                            finally implemented my version of a carousel for my blog posts images. This was a highly
+                            considered decision as I had spent a lot of time messing around with different carousel
+                            ideas, and I kept coming back to some core issues. The number one being that all the
+                            carousels I could find online relied on a class system, which because of this, would not
+                            work with multiple iterations, as each of the carousels would scroll if one was scrolled.
+                            The second was that unless all of my images were the same size and proportion, then unless
+                            my blog posts height dynamically changed based on the position of the carousel which I
+                            imagine would be incredibly jarring, then there would be awkward white space underneath
+                            images that weren’t as tall as the tallest image in the carousel. With my ethos of doing
+                            things only if I can implement them in seamless and pleasant manner, I wasn’t happy with
+                            these issues. I considered just making sure that all my images were of the same proportion,
+                            my mind immediately went to Instagram with their square proportions, which I find very nice,
+                            however a large issue with that is that since I would be mostly taking screenshots of my
+                            website, it made no sense to use square images as not matter what I did aspects of the
+                            website would be cropped out.
+                            <br><br>
+                            My solution was to implement a user-dragged carousel, where the carousel is slid across by
+                            the user clicking and holding and moving their cursor, the nice thing about this is that
+                            there is no buttons so it works well with the my ‘custom cursor’ button design, it’s also
+                            very fast, and it can work in multiple iterations, after I made a small adjustment to the
+                            existing code, where using a for loop it can affect all of the carousels.</p>
+                    </article>
+                    <h2 class="dateday">03</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <div class="slider">
+                            <img src="images/scrolling.JPG"
+                                alt="Portion of the code, this is what sets the active section when the user scrolls"
+                                onclick="onClick(this)" style="display: block;">
+                            <img src="images/P2.JPG" alt="My inital frameworking for project 2" onclick="onClick(this)"
+                                style="display: block;">
+                        </div>
+                        <h1>Blog navigation and the right time to start coding</h1>
+                        <h2 class="datemobile">02 Oct</h2>
+                        <p>Today I figured that I should probably spend some time working on our group project as we are
+                            supposed to have started coding it by now. I went through and built out a very rough
+                            framework. I used the same technique I used in my last iteration of this in order to get the
+                            pages on one big ‘screen’ that can be scrolled left and right, which is using and overflow
+                            wrapper, and aligning all of the different pages in grid columns which a width of 100vw.
+                            This has its issues but its and easy way to get the content out there so that if the other
+                            want to start doing work they can start on any of the pages and don’t have to wait for me to
+                            create the final system with all of its functionality. After doing this I pushed this to the
+                            master of our git project, and then made branches for everyone so that if they would like
+                            they can start working on the content of our website.
+                            <br><br>
+                            I spent the rest of today polishing the scrolling effect that I finally got working
+                            yesterday and bringing across from my test website to my blog. The first thing I did was
+                            apply the same effect to the months as well as the day so that they can scroll individually.
+                            I’m sure there is a way to optimise the JavaScript for this, but essentially all I did was
+                            copy the same code, and use different variables, in this case it was sxnday/sxnmonth, and
+                            idxday/idxmonth. I should also explain a bit of how this works, because while I started with
+                            existing code, I ended rewriting the whole thing anyway, however using that existing code
+                            helped with me understanding the logical process of what needs to happen. Essentially an
+                            array is initialised of all the sections, day or month. A new variable is then made = 0,
+                            idx, then by manipulating this idx variable and then using it as the value for the array
+                            like sxn[idx] we can ‘select’ a section. There are two ways to change the value of idx, the
+                            first is by using the next and back buttons which respectively add 1 or subtract one,
+                            idx++/idx--, the second is by scrolling, for this I created an event listener, that when the
+                            user scrolls, it records the distance from the top of the current ‘active’ section and the
+                            top of the viewport. We can then use if statements to say that if the bottom of the active
+                            section is negative, and therefore greater than the top of the viewport, the active section
+                            must have been scrolled past entirely, in which case we can add 1 to idx, and set the
+                            section below the one just scrolled to active. This then repeats and is also mirrored for
+                            when the top of the active section is below the bottom of the viewport, we can subtract 1
+                            from idx.
+                            <br><br>
+                            Once we have established which section is ‘active’ we can then run a function that when one
+                            of the next or back buttons is clicked, it will scroll to either idx++ or idx--. I’m really
+                            proud to have made this system as it turned out be quite complex, and this is my first time
+                            doing pure JavaScript.
+                            <br><br>
+                            To polish this effect I emulated an effect from one of my favourite websites
+                            https://dasprogramm.co.uk/, where they use a carousel with buttons that change the cursor to
+                            an arrow in the direction of the movement of the carousel. I placed this new style of
+                            buttons on top of the columns for the dates at all times, and then used grids to place the
+                            next buttons on the bottom half of the screen and the back buttons on the top half of the
+                            screen. This resulted in a fantastic and in my view very intuitive system of navigation.</p>
                     </article>
                     <h2 class="dateday">02</h2>
                 </section>
                 <section class="day">
                     <article>
-                        <div class="slider">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="lilly belle4.jpg" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                        </div>
-                        <h1>Figma framework and Git take</h1>
-                        <div class="mobiledate">
-                            <h2 class="date">03</h2>
-                            <h2 class="date">Jan</h2>
-                        </div>
-                        <p>After struggling a whole ton with positioning and aligning things in the first practice
-                            assignment
-                            <br>
-                            <br>
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.</p>
+                        <img class="singleimg" src="images/scrolltest.JPG"
+                            alt="My test website where each of the different colours, are different sections, blue is currently the active section because it intersects with the top of the viewport, and therefore it has a red stroke"
+                            onclick="onClick(this)" style="display: block;">
+                        <h1>Blog success</h1>
+                        <h2 class="datemobile">01 Oct</h2>
+                        <p>This morning I finally got this effect that I have been working on for my blog complete. I
+                            knew that with my new date system I wanted a way to quickly scroll through the dates of
+                            blogs as opposed to scrolling through every single blog post. My solution to this was making
+                            forwards and back buttons that scroll and entire month, I implemented this very simply at
+                            the beginning however the big problem I was running into was that if you clicked the next
+                            button and got taken to blog post 2 for example, and then manually scrolled down to blog
+                            post 5. The buttons wouldn’t recognise that change and therefore if you then clicked next
+                            you would be taken to back up to blog post 3, as that is 1 greater than the blog post that
+                            the button last took you to. This problem meant that I needed to create a system where the
+                            blog post that is currently in view no matter how you got to it, would be the post that
+                            would be used to reference where forwards and back should be from.
+                            <br><br>
+                            To avoid having to deal with unnecessary issues I made new test website to create this
+                            effect. In the current iteration of it I have it set up so that as you scroll down, the
+                            section that is currently intersected by the top of the viewport is assigned as the active
+                            section indicated by its red stroke. The buttons at the top then set the active section to
+                            either +1 or -1 from the current active, and then smooth scroll to it.</p>
                     </article>
-                    <h2 class="dateday">03</h2>
+                    <h2 class="dateday">01</h2>
                 </section>
             </div>
-            <h2 class="datemonth">Feb</h2>
+            <h2 class="datemonth">Oct</h2>
         </section>
         <section class="month">
             <div class="daywrapper">
                 <section class="day">
                     <article>
                         <div class="slider">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="lilly belle4.jpg" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
+                            <img src="images/filter.JPG" alt="The filter in question" onclick="onClick(this)"
+                                style="display: block;">
+                            <img src="images/jacksfilter.JPG" alt="Jacks take on the filtering system"
+                                onclick="onClick(this)" style="display: block;">
+                            <img src="images/finalfilter.JPG"
+                                alt="Our current 'final' iteration of the filtering system" onclick="onClick(this)"
+                                style="display: block;">
                         </div>
-                        <h1>Figma framework and git take</h1>
-                        <div class="mobiledate">
-                            <h2 class="date">03</h2>
-                            <h2 class="date">Jan</h2>
-                        </div>
-                        <p>After struggling a whole ton with positioning and aligning things in the first practice
-                            assignment
-                            <br>
-                            <br>
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.</p>
+                        <h1>Madisyn's checklist</h1>
+                        <h2 class="datemobile">29 Sep</h2>
+                        <p>Last class on Thursday Madisyn made a checklist of the work that we needed to do on our
+                            website based on the feedback we received from our presentation, the feedback we received in
+                            the email from Blaine, and the feedback we received in our user testing. This was very
+                            helpful in delegating tasks as we new specifically what needed to be done. At the forefront
+                            for a lot of our changes was the filter system. The feedback we received was that it was not
+                            obvious at all what the function of this was. There were a few solutions tossed around
+                            however we landed on the fact we needed to text somewhere in the filtering icons to give a
+                            bit of context as to what they do, we also needed to make look more like buttons.</p>
                     </article>
-                    <h2 class="dateday">01</h2>
+                    <h2 class="dateday">29</h2>
                 </section>
                 <section class="day">
-                    <article class="blog">
-                        <div class="slider">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="lilly belle4.jpg" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                        </div>
-                        <h1>Figma framework and Git take</h1>
-                        <div class="mobiledate">
-                            <h2 class="date">03</h2>
-                            <h2 class="date">Jan</h2>
-                        </div>
-                        <p>After struggling a whole ton with positioning and aligning things in the first practice
-                            assignment
-                            <br>
-                            <br>
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.</p>
+                    <article>
+                        <img class="singleimg" src="images/Blaine.JPG"
+                            alt="This is the Javascript for the next and back buttons for the scrolling system"
+                            onclick="onClick(this)" img />
+                        <h1>An hour and a half with Blaine</h1>
+                        <h2 class="datemobile">28 Sep</h2>
+                        <p>I have been struggling with my blog, a lot of motivation has been lost. I really like this
+                            date system that I have going on, but it seems to be messing with how I lay my page out, and
+                            I have this idea, where the user can use the date ‘column’ also as navigation, by pressing
+                            next/back on either the day or month. Initially I thought that this would be easy to create
+                            as I had implemented something like this last year in a website, I made for interaction
+                            design. However, that website only had 8 pages, and therefore it was reasonable to have two
+                            buttons on each page, both that link to the next and previous pages respectively. However,
+                            the issue that I faced in my blog is that there will be a lot of posts and having a unique
+                            button on each would be problematic. And so, I needed a dynamic system, where a next button
+                            would know which is the next post without being explicitly told. AND, because the user can
+                            scroll as well as use the buttons to navigate, I needed the system to be constantly aware of
+                            the what is the current screen, and therefore what the next and previous screens would be.
+                            All of this was overwhelming, and I don’t/didn’t really know pure JavaScript, I’ve done a
+                            fair bit of P5, but that can only help to a certain point.
+                            <br><br>
+                            I put my name down for an ‘interview’ with Blaine, so that I could explain this system to
+                            him and see if he could help me getting it to work. Prior to the interview I found some code
+                            online that said that it did the thing that I needed it to do, which it did, kind of. It
+                            would scroll forwards and back dynamically, however it had issues, it didn’t update itself
+                            when the user scrolled manually, and it also had this weird thing where the buttons would
+                            activate if you just clicked on a different section other than the one you were viewing. I
+                            think this was because this system was designed around the idea that each ‘screen’ would be
+                            equal to the viewport size, so this wouldn’t normally be possible.
+                            <br><br>
+                            I ran into a lot of luck with my interview with Blaine, the 3 people who were supposed to be
+                            after me never showed up, and so I was able to talk to him from 3:15 to 5:00. In this time,
+                            we managed to fix the buttons so that they would only be called when clicked, and Blaine
+                            headed me in the right direction with figuring out the dynamically updated position thing.
+                        </p>
                     </article>
-                    <h2 class="dateday">02</h2>
+                    <h2 class="dateday">28</h2>
                 </section>
                 <section class="day">
-                    <article class="blog">
-                        <div class="slider">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="lilly belle4.jpg" alt="Figma" onclick="onClick(this)" style="display: block;">
-                            <img src="Figma.png" alt="Figma" onclick="onClick(this)" style="display: block;">
-                        </div>
-                        <h1>Figma framework and Git take</h1>
-                        <div class="mobiledate">
-                            <h2 class="date">03</h2>
-                            <h2 class="date">Jan</h2>
-                        </div>
-                        <p>After struggling a whole ton with positioning and aligning things in the first practice
-                            assignment
-                            <br>
-                            <br>
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.
-                            In terms of GIT I used it last year to work on a group project for a game design
-                            project.
-                            GIT
-                            itself
-                            works really well for this. Working collaboratively GIT works well with its pulling and
-                            pushing
-                            system,
-                            and it documents all of the development changes for you so you can easily see what is
-                            being
-                            changed
-                            and
-                            go back to previous versions. I didn't use the branch system a lot, but from what I have
-                            read it
-                            allows
-                            for backend development and experimentation without touching the master branch which I
-                            can
-                            see
-                            being
-                            very useful. GITs community also seems to be promising with its open source and
-                            collaborative
-                            focus.
-                            Github desktop worked well for me to easily switch between and manage multiple projects
-                            that
-                            I
-                            was
-                            working on, in a much more visual system than using the terminal or git bash.</p>
+                    <article>
+                        <img class="singleimg" src="images/presentation.JPG"
+                            alt="This is an overview of the Figma document that we presented" onclick="onClick(this)"
+                            img />
+                        <h1>Prototype presentation</h1>
+                        <h2 class="datemobile">24 Sep</h2>
+                        <p>Mmmm time to present. I wasn’t there when this happened but apparently Blaine had came over
+                            to our group and suggested that the least vocal of the group should present, which to me
+                            sounded like a fantastic idea, however Cindy and Kat both defended themselves by saying that
+                            they know nothing about the website, and so if they were to present they would make our
+                            website look bad. Personally, I was completely okay with this, but as a group we decided
+                            that we would all go up and present, which was a strange metaphor for yes Jamie can present.
+                            <br><br>
+                            Overall the presentation went well, I think we got some good feedback, and this put us in a
+                            good position to continue developing our website.</p>
+                    </article>
+                    <h2 class="dateday">24</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Readying the prototype for presenting</h1>
+                        <h2 class="datemobile">22 Sep</h2>
+                        <p>This morning our group of 5 all met up on campus and worked further on our prototypes. This
+                            was also a productive session, probably the most productive session we ever had. I think
+                            that says something about our class sessions.
+                            <br><br>
+                            After doing as much as we could do before class, I quickly setup the prototyping with
+                            Madisyn so we were ready to present.
+                            <br><br>
+                            Everyone thought that we were supposed to be presenting our prototypes to the class today
+                            hence the last the second rush, however apparently it was just to email to Blaine, and then
+                            we would be presenting alongside our newly introduced user testing results. In hindsight
+                            this was probably for the best, as the prototype that we ended up with was nice and felt
+                            like a huge leap forward from what we had before.
+                        </p>
+                    </article>
+                    <h2 class="dateday">22</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Helping Jack with the redesign</h1>
+                        <h2 class="datemobile">21 Sep</h2>
+                        <p>Me, Madisyn, and Jack hopped in a call to help Jack out with his redesign. I think this was a
+                            very productive session. Essentially, we applied the aspects of Jacks design that we liked,
+                            primarily his index page, and then applied them to the other pages.</p>
+                    </article>
+                    <h2 class="dateday">21</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Critiquing Jack</h1>
+                        <h2 class="datemobile">19 Sep</h2>
+                        <p>I’ve been focussing on other projects, so I called Jack to check out how he was going with
+                            the redesign. At this point Jack had done the home screen, the index screen, and the
+                            nominations screen. I really loved what he had done with the index page, and the decision to
+                            remove the awkward side navigation bar that I had created was great, as it broke down the
+                            structure that we had been confined to recently. His use of yellow and just the generic
+                            laying out of each of business cards was fantastic. However, I really didn’t like his layout
+                            for the home screen, and I even more disliked his version of the nominations page. The
+                            biggest issue that I had with both, was that I didn’t follow the same alignment that we he
+                            had laid out in the index page. Because Jack was being careful to not make any of the work
+                            any of our other team members had done redundant, Jack had left in Kats vertical ‘logo’ on
+                            our homepage, and the awkward description of the business of the day. Due to the vertical
+                            and left aligned logo, Jack had then treated the ‘centre’ of the page, as the centre of the
+                            area that was left when you don’t consider the logo. This is where he aligned this text. I
+                            felt very strongly about this. On the nominations page Jack had this idea that the
+                            horizontal nav from the index would continue across the top of the nominations page two, and
+                            then wrap around the outer edge where the white space would have been. Jack then used the
+                            true page centre to align the elements of this page, I found this very jarring, since the
+                            change in background colour between the white and yellow made the alignment of the content
+                            very difficult to see, and it felt very floaty, the same could be said for the home screen.
+                            Because Jack is my friend, I didn’t mind bringing up these critiques.
+                            <br><br>
+                            One of my other semi-critiques, was that Jack wasn’t using grids in figma to align things,
+                            and because this everything was out of whack. I showed Jack how to use them, in which he
+                            told me off for not telling the rest of the group earlier and allowing them to make
+                            unaligned content which is fair. But I was trying to dial back my influence on the group as
+                            I felt like I was making too many of the decisions.
+                        </p>
+                    </article>
+                    <h2 class="dateday">19</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Presentation looming</h1>
+                        <h2 class="datemobile">17 Sep</h2>
+                        <p>Due to the looming pressure of having to present a fully prototyped website we have all come
+                            to the collective decision that designing a website between 5 people is the worst thing in
+                            the world and only leads itself to either inconsistences, or people not getting what they
+                            want.
+                            <br><br>
+                            Almost collectively we have decided that Jack over the weekend will create a redesign of our
+                            website, while retaining the generic form. I am very keen for this as I have a lot of faith
+                            in Jacks creative decisions, and I think that at the moment we are stuck in a rut of being
+                            confined to the early block frames that I initiated, which while they get the idea across
+                            around how our website should function, it really is not the best thing I have done, and its
+                            causing a lot of issues.
+                        </p>
+                    </article>
+                    <h2 class="dateday">17</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/uhuohcoding.jpg" alt="What a waste of time"
+                            onclick="onClick(this)" img />
+                        <h1>Too early to start coding</h1>
+                        <h2 class="datemobile">15 Sep</h2>
+                        <p>Tuesday Class session, we spent a bit of time discussing with Josh and Blaine our wireframes
+                            so far, we then split off into two groups. Me and Madisyn beginning coding our website, and
+                            Jack and Cindy tidying up our figma documents and finalising our style guide. Me and Madisyn
+                            worked together to get the rough outline of the index page setup. Retrospectively this was a
+                            bad idea.</p>
+                    </article>
+                    <h2 class="dateday">15</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/firstdates.jpg" alt="First implementation of my date system"
+                            onclick="onClick(this)" style="display: block;">
+                        <h1>Style guide start and blog development</h1>
+                        <h2 class="datemobile">14 Sep</h2>
+                        <p>Another discord call with the group, we each went through the wireframes that we made and
+                            discussed what was good and what we thought needed changing. We then used the wireframes we
+                            had made to start deriving a style guide.
+                            <br><br>
+                            After this I did more work on the blog, I added in a feature that I have been planning for a
+                            bit, essentially the date is show in 3 columns on the left hands side, when you scroll the
+                            elements are all sticking to the blog posts that each element is relevant to, then when you
+                            scroll past the end of a blog the new date will scroll up with it and then become stickied
+                            at the same position as the old date. This is a bit of a gimmick, but I like to think that
+                            it helps to better visualise the passing of time between each blog post.
+                        </p>
+                    </article>
+                    <h2 class="dateday">14</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/blockframe.JPG"
+                            alt="This is the prototyped figma document I made to present my idea for the website"
+                            onclick="onClick(this)" style="display: block;">
+                        <h1>Working with the new framework</h1>
+                        <h2 class="datemobile">11 Sep</h2>
+                        <p>Thursdays class was not amazing, so I told everyone that I would go off and create a properly
+                            prototyped block-from of my idea for the website. We all got on Discord, and I showed my
+                            prototyped block frame and together we assigned content to work on to each member of the
+                            group.
+                            <br><br>
+                            The overarching idea for my blockframes is that all of the content is one HTML page, and to
+                            get to each of the different segments of the website, a button is pressed and all of the
+                            central content slides across revealing the new content. This then creates the illusion the
+                            content is all on one large plane, and the viewport is moving to view different content. I
+                            then have a horizontal stickied bar on the left that containes the filtering system for the
+                            businesses on the index page.</p>
+                    </article>
+                    <h2 class="dateday">11</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Framework pitch</h1>
+                        <h2 class="datemobile">10 Sep</h2>
+                        <p>Before class I went around to Jack's again to discuss our project, we had a good talk and seemed
+                            to be on the same page about locking down the framework of our website before everyone
+                            started doing their own thing. During class I pitched my idea for navigating the website to
+                            group as there was a lot of inconsistencies between everyone’s block framework, and I wanted
+                            to stray away from the traditional ways of navigating a website. This could of gone a lot
+                            better, because my idea was still fresh I did not have enough supporting to visuals to
+                            explain my ideas, especially through and online class. Desipite this based on my pitch we
+                            rearranged our user flow to line up with this idea.</p>
+                    </article>
+                    <h2 class="dateday">10</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Group coordination</h1>
+                        <h2 class="datemobile">08 Sep</h2>
+                        <p>Tuesday class work session. We were tasked with making our block frames for the next class
+                            session. We split up the pages to be done based off the user flow that we created earlier. I
+                            opted to do the Nominations page however I found it difficult to start designing the page
+                            without having the framework of the website really locked down. Everyone started doing their
+                            own versions of navigation bars and I really felt like before we started designing anything
+                            we should have properly sat down and came up with the general framework of the website, so
+                            that we can better design each page.</p>
+                    </article>
+                    <h2 class="dateday">08</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Userflows and mood-boards</h1>
+                        <h2 class="datemobile">04 Sep</h2>
+                        <p>Went to Jacks and we worked with Madison through discord. I made a quick user flow/block
+                            frame in figma using the templates that Blaine selected. And Jack and Madison worked through
+                            finishing our brief and creating our mood boards.</p>
+                    </article>
+                    <h2 class="dateday">04</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Unproductive zoom class</h1>
+                        <h2 class="datemobile">03 Sep</h2>
+                        <p>Thursday class session through zoom. In our groups we were supposed to have created our key
+                            users and finalized the idea of our website. We were tasked with making our user flows for
+                            the website in figma and creating our brief. We split the work up so that me and Kat worked
+                            on the user flow, whilst jack Madison and Cindy worked on finishing up the brief.</p>
                     </article>
                     <h2 class="dateday">03</h2>
                 </section>
+                <section class="day">
+                    <article>
+                        <h1>Project 2 pitches</h1>
+                        <h2 class="datemobile">01 Sep</h2>
+                        <p>Our first work session in our group. We pitched our ideas for our website. I pitched two
+                            ideas, one was a simplified app that made catching a bus a lot simpler, and the other was a
+                            Pinterest board inspired site where you could take notes and drop images. Jack pitched a
+                            Chicken Nugget review website; Madison pitched a website that was an index of businesses
+                            where the user could easily navigate through and find the service that they were after. Kat
+                            pitched a website that acted as a database of work examples for Victoria university
+                            projects. After talking a bit with Josh, we chose Madison’s ideas, as Josh warned us that
+                            creating websites with databases would be difficult, and that ruled out pretty much all of
+                            the other suggestions. We then further discussed our website with Blaine, where he suggested
+                            that we narrow our scope further, and target specific businesses, from this we chose to
+                            specifically do hospitality businesses that we curated under 4 categories, cost, charity,
+                            environment, and local.</p>
+                    </article>
+                    <h2 class="dateday">01</h2>
+                </section>
             </div>
-            <h2 class="datemonth">Jan</h2>
+            <h2 class="datemonth">Sep</h2>
+        </section>
+        <section class="month">
+            <div class="daywrapper">
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/p5.jpg" alt="The iframe and parallaxed button for my home page" onclick="onClick(this)"
+                            style="display: block;">
+                        <h1>Too afraid to try real JavaScript</h1>
+                        <h2 class="datemobile">18 Aug</h2>
+                        <p>After doing the dark mode tutorial I had an attempt at implementing p5.js into my blog
+                            because I wanted to create some nice effects to go in the background of the home page.
+                            Getting p5 seamlessly into html I found difficult, I ended up using an Iframe and linking
+                            the JavaScript in. Although I still had a lot of issues in making the iframe responsive I
+                            eventually got it working. One of the effects that I am really interested in is parallax, so
+                            I quickly created this faux 3d cube that changes perspective based on where the mouse is. I
+                            liked this effect, but I didn’t like how it was always just a background element, and I
+                            couldn’t interact with the objects I was drawing through the iframe like a pressing a
+                            button. I looked at this website through awwwards https://activetheory.net/home and chose to
+                            try and replicate the parallaxes button on the home page. While I don’t think that I will
+                            use this specific effect in my blog, it was a good experiment in learning how to implement
+                            more complicated use of JavaScript into websites.</p>
+                    </article>
+                    <h2 class="dateday">18</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <div class="slider">
+                            <img src="images/darkmode.JPG" alt="its dark" onclick="onClick(this)"
+                                style="display: block;">
+                            <img src="images/darkmodejs.JPG" alt="The javascript for the darkmode tutorial"
+                                onclick="onClick(this)" style="display: block;">
+                        </div>
+                        <h1>Dark-mode tutorial</h1>
+                        <h2 class="datemobile">17 Aug</h2>
+                        <p>Thought I would get around to finishing up the dark mode tutorial that we did in our last
+                            class on Thursday. I found this one easy using the JavaScript that was included in the
+                            example site, and then adding classes and containers around the content in the flexbox
+                            tutorial to fit. My dark mode is not the prettiest thing, but I got the hold of how this can
+                            be used fast.</p>
+                    </article>
+                    <h2 class="dateday">17</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Last class before mid-sem holidays</h1>
+                        <h2 class="datemobile">13 Aug</h2>
+                        <p>Today’s class I did not do a lot given it’s the last class before the mid semester holidays.
+                            We got introduced to the dark mode exercise which seems to be using a lot more JavaScript.
+                        </p>
+                    </article>
+                    <h2 class="dateday">13</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <div class="slider">
+                            <img src="images/meme.JPG" alt="Don't click the button" onclick="onClick(this)"
+                                style="display: block;">
+                            <img src="images/memejs.JPG" alt="The if statements used"
+                                onclick="onClick(this)" style="display: block;">
+                        </div>
+                        <h1>Quirky JavaScript</h1>
+                        <h2 class="datemobile">12 Aug</h2>
+                        <p>I did the exercise that was introduced on Tuesday’s class today, which was our introduction
+                            to JavaScript. We needed to make a page that had two buttons which allowed the user to
+                            switch between two static images. I decided that I would go a step farther using my
+                            incredible knowledge of if statements, and make the same system with one button, that
+                            switches the image back and forth, I then used this system to make a shit meme, which was
+                            supposed to be jack dancing.</p>
+                    </article>
+                    <h2 class="dateday">12</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Project 1 hand-in</h1>
+                        <h2 class="datemobile">11 Aug</h2>
+                        <p>Hand in for our wireframes today. Very hectic. My time management for this project really
+                            hasn’t been the best, I had rough wireframes done for both outcomes done this morning
+                            however I really underestimated the work I needed to get done. I went to class with just my
+                            report yet to write for the hand-in at 5, however after talking to josh I found that the
+                            wireframes that I had done were too close to block frames and that I needed to work more on
+                            incorporating the styling that I wanted for each website into the wireframes. Blaine gave me
+                            an extension til midnight to hand-in which helped hugely. I finished writing the report that
+                            I had started in class, and then went about restyling a lot of the wireframe components. The
+                            main areas that I redesigned were the navbars for both the wireframes, and the ‘card’ that
+                            portrayed the information of a class. I also went about redesigning each of the interactable
+                            objects to make it clear that they could be clicked on.</p>
+                    </article>
+                    <h2 class="dateday">11</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>I am starting this way too late</h1>
+                        <h2 class="datemobile">10 Aug</h2>
+                        <p>I’m doing most of the ‘designing’ of the wireframes tonight. My first and in my opinion best
+                            of the two wireframe ideas is a sort of backtracking system. Where the user starts at their
+                            last year for their chosen degree, and then as they select papers for that year, the pre
+                            requisite papers that they would have needed to have taken in order to take those papers in
+                            their last year are automatically added to their previous years and a line is drawn between
+                            each of the classes.
+                            <br><br>
+                            The intentions behind this design is that by the end of selecting their papers the user will
+                            have a ‘tree’ like diagram that represents the direction that they have taken each course.
+                            <br><br>
+                            My other idea a lot simpler and more traditional, there is a navbar at the top which allows
+                            the user to switch between years and the select degree page. On each page for a specific
+                            year the user can drag and drop papers from a search box and into tabs for each of the
+                            trimester. As they do so their point totals and requirements will change dynamically on a
+                            tab on the same page. The intention behind both of my designs is to give a sense of
+                            tactility and weight to their selections outside of dropdown menus, and to very clearly show
+                            the prerequisite papers that need to be taken in order to complete their selected degree.
+                        </p>
+                    </article>
+                    <h2 class="dateday">10</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/grids.JPG" alt="The media-queries I used for the grids tutorial" onclick="onClick(this)"
+                            style="display: block;">
+                        <h1>Grids and media-queries</h1>
+                        <h2 class="datemobile">06 Aug</h2>
+                        <p>Thursday class session, today we went through the grids exercise. I had already used grids a
+                            fair bit in my blog, so this wasn’t that new to me. I used the same media queries as in the
+                            flex box tutorial to make the grid structure change at a certain page width..</p>
+                    </article>
+                    <h2 class="dateday">06</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <h1>Wireframes and user flows</h1>
+                        <h2 class="datemobile">04 Aug</h2>
+                        <p>Tuesdays class, we looked at wireframe examples and user flows for our project 1 today.</p>
+                    </article>
+                    <h2 class="dateday">04</h2>
+                </section>
+            </div>
+            <h2 class="datemonth">Aug</h2>
+        </section>
+        <section class="month">
+            <div class="daywrapper">
+                <section class="day">
+                    <article>
+                        <h1>Figma familiarisation</h1>
+                        <h2 class="datemobile">30 Jul</h2>
+                        <p>Thursday Class session, we didn’t have any exercises to do today, we did a bit of a catch up
+                            on the work that we are doing for project 1. I started to familiarise myself with figma a
+                            bit more and worked out the grids tool within frames which is helping immensely with laying
+                            elements out proportionately and keeping consistent padding. I don’t know what either of my
+                            website wireframes will be just yet, but I do know that I will be going for 2nd brief option
+                            where we are tasked to create a course selection planner for the Victoria university
+                            website. At the moment I am thinking of creating a system that works backwards, where the
+                            user starts in their last year selecting papers, and then works their way back to their
+                            first year. The reason for doing it this way is so that the requirements for third year
+                            papers are made a lot clearer as they would be added to the previous year’s automatically.
+                        </p>
+                    </article>
+                    <h2 class="dateday">30</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/flex.JPG" alt="The media-queries I used for the flex tutorial" onclick="onClick(this)"
+                            style="display: block;">
+                        <h1>Flexbox introduction</h1>
+                        <h2 class="datemobile">28 Jul</h2>
+                        <p>Tuesday class session. We went through flexboxes today, for the class exercise we had to make
+                            a responsive version of a website provided to us, by using media queries to check the page
+                            width, and then change the CSS once it reaches a threshold.</p>
+                    </article>
+                    <h2 class="dateday">28</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <div class="slider">
+                            <img src="images/bw blog landing.jpg" alt="Landing page of my blog restyle" onclick="onClick(this)" style="display: block;">
+                            <img src="images/bw blog.jpg" alt="Blog page of my blog restyle" onclick="onClick(this)" style="display: block;">
+                        </div>
+                        <h1>Blog restyle</h1>
+                        <h2 class="datemobile">26 Jul</h2>
+                        <p>After working on the structure of my blog yesterday I started looking at the styling of the
+                            whole page, as well as the structure of each blog post. With my current layout of a lot of
+                            nested divs each with their own padding I was wasting a lot of space. I decided to remove
+                            the colour from each of the different div, so that a smaller margin was less jarring, I then
+                            gave each element its own div as opposed to nesting all of the 'content' together. This way
+                            I can freely reorder how the information is stacked. I also changed from using the grid
+                            system to center and scale the blog posts proportionally, as when using fractions, the blogs
+                            would become too thin when the browser was rescaled. I changed to instead using a min and
+                            max width, and then a margin on the sides of the scrollbar div. This is so that the blogs
+                            will stay at a constant size when being scaled, until the margin pushes them closer
+                            together.
+                            <br><br>
+                            Style wise I changed from my boxy appearance as that was really just there to see the
+                            margins for each div. I'm a fan of minimalist websites so I went for an incredibly boring
+                            theme of black and white, using the font Helvetica. I restyled the scrollbar to match this
+                            aesthetic and added a single line border on each blog post to easily differentiate between
+                            blog posts.
+                        </p>
+                    </article>
+                    <h2 class="dateday">26</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/blogrestruct.jpg" alt="Ok ignore the colour scheme its placeholder" onclick="onClick(this)"img/>
+                        <h1>Blog restructure</h1>
+                        <h2 class="datemobile">25 Jul</h2>
+                        <p>Worked a lot more on the structure of blog itself, I had a rough idea of what I wanted to do,
+                            such as the best way to implement the stickied header at the top. I disliked the regular way
+                            of achieving this of just giving the header a stickied position because I wanted the header
+                            in both the home page and reflections page to be inline, however with more posts the
+                            reflections page had a scrollbar and the home didn't, causing them to be out of line.
+                            <br><br>
+                            The way I ended up getting around this was actually setting the wrapper div to be the exact
+                            viewport size, so that a scrollbar is not generated. And then wrapping the blog posts within
+                            another div, this time with overflow, this meant that the header stayed constant and I could
+                            still scroll through the blogs nicely, this also meant that the scrollbar was now nicely
+                            offset from the side of the page, and I can place it neatly in-line with the header with a
+                            consistent margin.
+                            <br><br>
+                            After achieving this I started looking at the styling of the whole page, as well as the
+                            structure of each blog post. With my current layout of a lot of nested divs each with their
+                            own padding I was wasting a lot of space. I decided to remove the colour from each of the
+                            different div, so that a smaller margin was less jarring, I then gave each element its own
+                            div as opposed to nesting all of the 'content' together. This way I can freely reorder how
+                            the information is stacked. I also changed from using the grid system to center and scale
+                            the blog posts proportionally, as when using fractions, the blogs would become too thin when
+                            the browser was rescaled. I changed to instead using a min and max width, and then a margin
+                            on the sides of the scrollbar div. This is so that the blogs will stay at a constant size
+                            when being scaled, until the margin pushes them closer together.
+                            <br><br>
+                            Style wise I changed from my boxy appearance as that was really just there to see the
+                            margins for each div. I'm a fan of minimalist website so I went for an incredibly boring
+                            theme of black and white, using the font Helvetica. I restyled the scrollbar to match this
+                            aesthetic and added a single line border on each blog post to easily differentiate between
+                            blog posts.
+                        </p>
+                    </article>
+                    <h2 class="dateday">25</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <img class="singleimg" src="images/greenblog.jpg" alt="ignore the colour scheme" onclick="onClick(this)"img/>
+                        <h1>Project 1 introduction, Git, and Blog development</h1>
+                        <h2 class="datemobile">23 Jul</h2>
+                        <p>We went over some basic CSS practices today and got introduced to project 1. I also set up my
+                            github for this project. Today I put more time into my blog, this time I looked at adding a
+                            navbar to the reflections page so that you can move back and forth between the two pages. I
+                            also started looking at the formatting of images in blog posts, and on hover effects for the
+                            button using CSS</p>
+                    </article>
+                    <h2 class="dateday">23</h2>
+                </section>
+                <section class="day">
+                    <article>
+                        <div class="slider">
+                            <img src="images/initialwireframes.JPG" alt="It's very minimal" onclick="onClick(this)" style="display: block;">
+                            <img src="images/firstbloglanding.jpg" alt="It's very minimal" onclick="onClick(this)" style="display: block;">
+                            <img src="images/firstblog.jpg" alt="It's very minimal" onclick="onClick(this)" style="display: block;">
+                        </div>
+                        <h1>Blog assignment introduction</h1>
+                        <h2 class="datemobile">21 Jul</h2>
+                        <p>Spent the class time experimenting with how to do my blog. After struggling a ton with simply aligning things
+                            vertically in our first mini assignment to replicate an existing website josh had told me
+                            that I should be using CSS Grids. I used these in my mock-up for my blog as more of a proof
+                            of concept, but I ended up really liking it. Grids work fantastically and made the whole
+                            experience a lot more enjoyable for me as I enjoy a highly structured system to worth
+                            within. With this early version of my blog I am not too worried about styling as I can
+                            always come back to that, I am more focussed on creating a layout for the content that makes
+                            sense and is easy to navigate. Here is the first iteration of the home page and reflections
+                            page that I created, the home page is very simple because I’m really not too sure on what I
+                            need to have on there so at the moment it just has the button that links you to the
+                            reflections page. The reflections page is very simple as well, just containing a singular
+                            ‘card’ layout for a single post.
+                            <br><br>
+                            After doing this I then went about creating wireframes for how I imagine that my blog will end up. I want to mantain a very minal style, limiting my colours to only grayscale. I like the idea of bringing in contrast between the home/landing page, and the reflections page so I used a black background for the home, and white for the reflections. For the image section of the blog post, I know I want a carousel, but I don't want buttons. I want to explore the idea of using custom cursors to indicate if a section of the blog is clickable, and if so what it does. I'm thinking that in case they will be small arrows that point in the direction that the carousel will slide. I'm not sure I entirely understand the homescreen either, I feel like something like this is much more suited to a portfolio like website, where there would be a reason to list who you are and your contacts.
+                        </p>
+                    </article>
+                    <h2 class="dateday">21</h2>
+                </section>
+                <section class="day">
+                    <article class="blog">
+                        <img class="singleimg" src="images/websiteemu.jpg" alt="ignore the colour scheme" onclick="onClick(this)"img/>
+                        <h1>CSS Box Model and website emulation</h1>
+                        <h2 class="datemobile">16 Jul</h2>
+                        <p>We looked at the CSS ‘box model’ today and worked further on our small assignment to
+                            replicate a part of existing website. I chose the stickied navigation bar thing from the
+                            Helvetica Now website. I really struggled with emulating this because I couldn’t figure out
+                            how to correctly vertically centre text within a div without just estimating it with padding
+                            and margins because if I did that then the website would not be responsive. This is as far
+                            as I got, the biggest cause of my issues was that I needed the header and subheader within
+                            the navbar thing to be in different divs so that they could be different font sizes, but
+                            then this meant having to centre to divs proportionately to the centre of another which I
+                            couldn’t figure out.</p>
+                    </article>
+                    <h2 class="dateday">16</h2>
+                </section>
+                <section class="day">
+                    <article class="blog">
+                        <img class="singleimg" src="images/now.jpg" alt="The website I plan on emulating" onclick="onClick(this)"img/>
+                        <h1>Introduction to CSS and HTML</h1>
+                        <h2 class="datemobile">14 Jul</h2>
+                        <p>First class, we got introduced to HTML and CSS quickly and then given a mini assignment to
+                            replicate an existing website. I chose to do the Helvetica Now Website from Monotype here
+                            https://www.monotype.com/fonts/helvetica-now </p>
+                    </article>
+                    <h2 class="dateday">14</h2>
+                </section>
+            </div>
+            <h2 class="datemonth">Jul</h2>
         </section>
         <section class="footer" id="footer">
             <button class="tolanding" onclick="tolanding()">Landing</div>
@@ -653,7 +1088,9 @@
 
     function toblog() {
         sxnday[idxday].scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'center'
         })
     };
 
@@ -706,25 +1143,27 @@
 
     function tolanding(landing) {
         document.getElementById('landing').scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
         })
     };
 
     function tofooter(footer) {
         document.getElementById('footer').scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
         })
     };
 
     function idxScrollday(idxday) {
         sxnday[idxday].scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'center'
         });
     }
 
     function idxScrollmonth(idxmonth) {
         sxnmonth[idxmonth].scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
         });
     }
 
@@ -905,6 +1344,11 @@
 
     function onClick(element, e) {
         if (initialx == endx && initialy == endy) {
+
+            var alttext = element.getAttribute("alt");
+            var textbox = document.getElementById('text01');
+
+            textbox.innerHTML = alttext;
             document.querySelector("body").style.overflow = 'hidden';
             document.getElementById("img01").src = element.src;
             document.getElementById("modal01").style.display = "block";
